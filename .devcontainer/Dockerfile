@@ -10,9 +10,9 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get -y install build-essential git cmake pkg-config \
     libbz2-dev libxml2-dev libzip-dev libboost-all-dev \
-    lua5.2 liblua5.2-dev libtbb-dev && \
+    lua5.2 liblua5.2-dev libtbb-dev wget && \
     apt-get autoremove -y && \
-    apt-get wget clean -y && \
+    apt-get clean -y && \
     rm -rf /var/lib/apt/lists/*
 
 # Switch back to dialog for any ad-hoc use of apt-get
