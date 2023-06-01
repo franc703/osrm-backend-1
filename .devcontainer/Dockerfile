@@ -8,7 +8,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 # Update and install necessary tools
 RUN apt-get update && \
-    apt-get -y install --no-install-recommends build-essential git cmake pkg-config \
+    apt-get -y install build-essential git cmake pkg-config \
     libbz2-dev libxml2-dev libzip-dev libboost-all-dev \
     lua5.2 liblua5.2-dev libtbb-dev && \
     apt-get autoremove -y && \
