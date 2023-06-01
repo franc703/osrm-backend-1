@@ -12,7 +12,7 @@ RUN apt-get update && \
     libbz2-dev libxml2-dev libzip-dev libboost-all-dev \
     lua5.2 liblua5.2-dev libtbb-dev && \
     apt-get autoremove -y && \
-    apt-get clean -y && \
+    apt-get wget clean -y && \
     rm -rf /var/lib/apt/lists/*
 
 # Switch back to dialog for any ad-hoc use of apt-get
